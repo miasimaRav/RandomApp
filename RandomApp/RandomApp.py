@@ -1,3 +1,6 @@
 import random
 
-random_list = [random.randint(5, 1100) for _ in range(21)]
+def generateRandomList(num_elements):
+    return [random.randint(5, 1100) for i in range(num_elements)]
+
+random_list = generateRandomList(21)
